@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Foco TDAH",
+  "version": "1.0",
+  "description": "Auxiliar de foco para pessoas com TDAH",
+  "permissions": [
+    "storage", 
+    "alarms", 
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "pages/index.html",
+    "default_icon": {
+      "16": "images/hello_extensions.png"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Foco TDAH</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="timer">Timer</button>
+      <button class="tab-button" data-tab="history">Histórico</button>
+    </div>
+
+    <div id="timer-tab" class="tab-content active">
+      <h1>Foco TDAH</h1>
+      
+      <div class="time-select">
+        <label for="focus-time">Tempo de Foco:</label>
+        <select id="focus-time">
+          <option value="5">5 minutos</option>
+          <option value="10">10 minutos</option>
+          <option value="15">15 minutos</option>
+          <option value="20">20 minutos</option>
+          <option value="25">25 minutos</option>
+          <option value="30">30 minutos</option>
+        </select>
+      </div>
+
+      <div class="interval-select">
+        <label for="sound-interval">Intervalo do Som:</label>
+        <select id="sound-interval">
+          <option value="30">30 segundos</option>
+          <option value="60">60 segundos</option>
+        </select>
+      </div>
+
+      <div class="sound-select">
+        <label for="sound-type">Tipo de Som:</label>
+        <select id="sound-type">
+          <option value="soft">Suave</option>
+          <option value="bell">Sino</option>
+          <option value="nature">Natureza</option>
+          <option value="beep">Bipe</option>
+        </select>
+      </div>
+
+      <div class="timer-controls">
+        <button id="start-timer">Iniciar Foco</button>
+        <button id="stop-timer" disabled>Parar</button>
+      </div>
+
+      <div id="timer-display">00:00</div>
+    </div>
+
+    <div id="history-tab" class="tab-content">
+      <h2>Histórico de Foco</h2>
+      <div id="history-list"></div>
+      <button id="clear-history">Limpar Histórico</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
